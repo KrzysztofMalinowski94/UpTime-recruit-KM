@@ -2,6 +2,7 @@ import React from "react";
 
 import Intro from "./components/Intro/Intro";
 import NavBar from "./components/NavBar";
+import Section from "./components/Section/Section";
 
 export class App extends React.Component {
   state = {
@@ -19,6 +20,7 @@ export class App extends React.Component {
     <div>
       <NavBar></NavBar>
       <Intro></Intro>
+      <Section></Section>
     </div>
     );
   };

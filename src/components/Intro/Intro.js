@@ -18,14 +18,14 @@ export const Intro = () => {
             className="intro__buttonWrapper"
             >
               <Button
-              className="contained"
+              className="intro__button--contained"
               >
                 Button with a label
               </Button>
               <Button
-              className="outlined"
+              className="intro__button--outlined"
               >
-                This button looks empty
+              This button looks empty
               </Button>
             </div>
         </div>

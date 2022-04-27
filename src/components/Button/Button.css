@@ -9,6 +9,9 @@
     left: calc(50% - 169px/2 - 113.5px);
     margin: 0px 24px;
 
+    background: #3C64B1;
+    color: white
+
 }
 
 .intro__button--outlined{
@@ -24,11 +27,14 @@
     border: 1px solid #3C64B1;
     box-sizing: border-box;
     margin: 0px 24px;
+
+    background: transparent;
+    color: #3C64B1;
 }
 
 .navBar__button--contained{
 
 }
 .navBar__button--textual{
-    
+
 }

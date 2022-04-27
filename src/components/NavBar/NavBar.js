@@ -12,8 +12,12 @@ export const NavBar = () => {
       <Logo
       className={"logo"}
       ></Logo>
-      <Button>NAV</Button>
-      <Button>NAV</Button>
+      <div
+      className="navBar__buttons"
+      >
+        <Button>NAV</Button>
+        <Button>NAV</Button>
+      </div>
 
     </nav>
   );
