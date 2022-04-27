@@ -1,0 +1,10 @@
+.intro_button{
+    width: 100px;
+    height: 100px;
+    transition: 0.3 ease-in-out;
+}
+
+.intro__button:hover{
+    background-color: rgba(60, 100, 177, 1);
+    transition: 0.3s ease-in-out;
+}

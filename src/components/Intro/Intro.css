@@ -1,0 +1,23 @@
+.intro{
+    position: absolute;
+    height: 564px;
+    width: 1450px;
+    top: 88px;
+    background: rgba(60, 101, 177, 0.06);
+    background-image: url("../../img/unsplash\ 1.png");
+
+}
+
+.intro__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    width: 730px;
+    height: 296px;
+    left: calc(50% - 730px/2);
+    top: calc(50% - 296px/2);
+
+}
