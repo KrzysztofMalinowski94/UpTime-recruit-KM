@@ -1,4 +1,5 @@
 import React from "react";
+import Typography from "../Typography/Typography";
 
 import "./Section.css";
 
@@ -7,7 +8,12 @@ export const Section = () => {
     <section
     className="section"
     >
-        <h1>HERE GOES DATA</h1>
+
+        <Typography
+        className="h3"
+        >
+          <header>HERE GOES DATA</header>
+        </Typography>
     </section>
   );
 };

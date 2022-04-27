@@ -15,8 +15,12 @@ export const NavBar = () => {
       <div
       className="navBar__buttons"
       >
-        <Button>NAV</Button>
-        <Button>NAV</Button>
+        <Button
+        className={"navBar__button--textual"}
+        >Log In</Button>
+        <Button
+        className={"navBar__button--contained"}
+        >Register</Button>
       </div>
 
     </nav>
