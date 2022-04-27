@@ -1,5 +1,6 @@
 import React from "react";
 import "./Button.css";
+import Typography from "../Typography/Typography";
 
 import PropTypes from "prop-types";
 
@@ -10,10 +11,14 @@ export const Button = (props) => {
   } = props;
 
   return (
-        <button
-        className={className}
-        >
-            {children}
+    <button
+    className={className}
+    >
+    <Typography
+    className="button"
+    >
+      {children}
+    </Typography>
         </button>
   );
 };

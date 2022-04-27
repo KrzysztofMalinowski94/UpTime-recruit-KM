@@ -2,7 +2,6 @@ import React from "react";
 
 import Intro from "./components/Intro/Intro";
 import NavBar from "./components/NavBar";
-import Button from "./components/Button";
 
 export class App extends React.Component {
   state = {
@@ -20,11 +19,6 @@ export class App extends React.Component {
     <div>
       <NavBar></NavBar>
       <Intro></Intro>
-      <Button
-      className = "intro__button"
-      >
-          IM DUMB
-      </Button>
     </div>
     );
   };

@@ -8,9 +8,8 @@ export const Intro = () => {
   return (
     <>
       <div
-      className="intro intro__bg"
+      className="intro"
       >
-      </div>
         <div
         className="intro__content"
         >
@@ -18,10 +17,19 @@ export const Intro = () => {
             <div
             className="intro__buttonWrapper"
             >
-              <Button>IM WITH LABEL</Button>
-              <Button>IM EMPTY</Button>
+              <Button
+              className="contained"
+              >
+                Button with a label
+              </Button>
+              <Button
+              className="outlined"
+              >
+                This button looks empty
+              </Button>
             </div>
         </div>
+      </div>
     </>
   );
 };

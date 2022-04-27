@@ -4,10 +4,12 @@ import Typography from "../Typography/Typography";
 export const IntroContent = () => {
   return (
     <>
-        <p
-        className="h2">
-            WANNA CHECK MY SKILLS?
+      <Typography
+      className="h2">
+        <p>
+        Hello fellow developer!
         </p>
+      </Typography>
         <Typography
         className={"body1"}
         >
