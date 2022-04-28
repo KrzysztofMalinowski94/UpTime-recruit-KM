@@ -4,10 +4,10 @@ import PropTypes from "prop-types";
 
 import "./UsersList.css";
 import UserCard from "../UserCard";
+import Button from "../Button";
 
 export const UsersList = (props) => {
   const {
-    // eslint-disable-next-line no-unused-vars
     data
   } = props;
 
@@ -22,6 +22,12 @@ export const UsersList = (props) => {
         >
         </UserCard>;
       })}
+      <Button
+      className="intro__button--outlined"
+      onClick = {() => { console.log("hi"); }}
+      >
+        Load more...
+      </Button>
     </div>
   );
 };

@@ -4,12 +4,15 @@ import Intro from "./components/Intro/Intro";
 import NavBar from "./components/NavBar";
 import Section from "./components/Section/Section";
 
-const URL = "https://randomuser.me/api/?results=8";
-
 export const App = () => {
   const [isLoading, setIsLoading] = React.useState(true);
   const [hasError, setHasError] = React.useState(false);
   const [data, setData] = React.useState(null);
+  // const [fetchNumber, setFetchNumber] = React.useState(8);
+  const fetchNumber = 8;
+  const URL = `https://randomuser.me/api/?results=${fetchNumber}`;
+
+  // const loadMoreData = setFetchNumber(fetchNumber + 8);
 
   const fetchUsers = () => {
     setIsLoading(true);
@@ -19,12 +22,15 @@ export const App = () => {
       .catch((error) => setHasError(error))
       .finally(() => setIsLoading(false));
   };
-  console.log("try1");
+
   React.useEffect(() => {
     fetchUsers();
-    console.log("hello");
   }, []
   );
+
+  // React.useEffect(() => {
+  //   fetchUsers();
+  // }, [fetchNumber]);
 
   return (
     <div>
@@ -38,6 +44,7 @@ export const App = () => {
           <Intro/>
           <Section
           data={data}
+          // onclick={loadMoreData}
           >
           </Section>
             </>

@@ -24,7 +24,6 @@ export const ButtonContainer = (props) => {
       >
         <Button
         className={"navBar__button--contained"}
-        onClick={console.log("HI")}
         >
           Register
         </Button>

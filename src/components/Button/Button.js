@@ -7,12 +7,14 @@ import PropTypes from "prop-types";
 export const Button = (props) => {
   const {
     className,
+    onclick,
     children
   } = props;
 
   return (
     <button
     className={className}
+    onClick={onclick}
     >
     <Typography
     className="button"
@@ -25,6 +27,7 @@ export const Button = (props) => {
 
 Button.propTypes = {
   className: PropTypes.string,
+  onclick: PropTypes.func,
   children: PropTypes.node
 };
 
