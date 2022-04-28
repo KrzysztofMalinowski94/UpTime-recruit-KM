@@ -2,14 +2,20 @@ import React from "react";
 
 import PropTypes from "prop-types";
 
+import "./Links.css";
+import Link from "../Link/Link";
+
 export const Links = () => {
   return (
-    <>
-    <a href="">hello</a>
-    <a href="">hello</a>
-    <a href="">hello</a>
-    <a href="">hello</a>
-    </>
+    <div
+    className="links__container"
+    >
+      <Link>What do we do?</Link>
+      <Link>Our projects</Link>
+      <Link>Testimonials</Link>
+      <Link>Blog</Link>
+      <Link>Support</Link>
+    </div>
   );
 };
 

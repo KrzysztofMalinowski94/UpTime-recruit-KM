@@ -4,7 +4,6 @@
     align-items: center;
     padding: 12px 18px;
 
-    width: 169px;
     height: 42px;
     left: calc(50% - 169px/2 - 113.5px);
     margin: 0px 24px;
@@ -12,15 +11,14 @@
     background: #3C64B1;
     color: white;
     border: none;
+    cursor: pointer;
 }
 
 .intro__button--outlined{
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 12px 18px;
 
-    width: 203px;
     height: 42px;
     left: calc(50% - 203px/2 + 96.5px);
 
@@ -30,6 +28,7 @@
 
     background: transparent;
     color: #3C64B1;
+    cursor: pointer;
 }
 
 .navBar__button--contained{
@@ -52,7 +51,7 @@
     background: #3C64B1;
     border: none;
     color: white;
-
+    cursor: pointer;
 }
 .navBar__button--textual{
     display: flex;
@@ -60,20 +59,17 @@
     align-items: center;
     padding: 12px 0px;
     
-    position: static;
     width: 43px;
     height: 42px;
     right: 114px;
     top: calc(50% - 42px/2);
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+
     margin: 0px 20px;
 
     border: none;
     background: transparent;
 
-    color:#3C64B1
+    color:#3C64B1;
+    cursor: pointer;
 }
 

@@ -34,8 +34,8 @@ export const App = () => {
         : isLoading
           ? "LOADING..."
           : <>
-          <Intro/>
           <NavBar/>
+          <Intro/>
           <Section
           data={data}
           >

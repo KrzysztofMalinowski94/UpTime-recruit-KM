@@ -1,0 +1,11 @@
+.links__container{
+    width: 472px;
+    height: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    left: calc(50% - 472px/2);
+    top: calc(50% - 18px/2);
+}
