@@ -1,30 +1,30 @@
 import React from "react";
-import Typography from "../Typography/Typography";
 
 import PropTypes from "prop-types";
+
+import UsersList from "../UsersList";
 
 import "./Section.css";
 
 export const Section = (props) => {
   const {
-    children
+    data
   } = props;
+
   return (
     <section
     className="section"
     >
-        <Typography
-        className="h3"
-        >
-          <header>HERE GOES DATA</header>
-          {children}
-        </Typography>
+        <UsersList
+        data={data}
+        ></UsersList>
     </section>
   );
 };
 
 Section.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
+  data: PropTypes.array
 };
 
 export default Section;

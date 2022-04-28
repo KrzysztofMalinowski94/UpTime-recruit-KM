@@ -1,0 +1,25 @@
+.userCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    flex-basis: 25%;
+
+    width: 255px;
+    height: 368px;
+    left: calc(50% - 255px/2 - 427.5px);
+    top: calc(50% - 368px/2);
+}
+
+.userCard__picture{
+    flex-wrap: wrap;
+    width: 256px;
+    height: 260px;
+    background-color: rgba(87, 87, 171, 0.086);
+    background-size: cover;
+    margin: 15px 5px
+}
+
+.userCard__info{
+
+}

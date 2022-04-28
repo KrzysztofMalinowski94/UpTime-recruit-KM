@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import Intro from "./components/Intro/Intro";
 import NavBar from "./components/NavBar";
@@ -11,21 +11,20 @@ export const App = () => {
   const [hasError, setHasError] = React.useState(false);
   const [data, setData] = React.useState(null);
 
-  const fetchData = async () => {
-    try {
-      const result = await fetch(URL);
-      const data = await result.json();
-      setData(data);
-    } catch (error) {
-      setHasError();
-    } finally {
-      setIsLoading(false);
-    }
-  };
+  const fetchUsers = React.useCallback(() => {
+    setIsLoading(true);
+    fetch(URL)
+      .then((r) => r.json())
+      .then((responseData) => setData(responseData.results))
+      .catch((error) => setHasError(error))
+      .finally(() => setIsLoading(false));
+  }, []);
 
-  useEffect(
-    fetchData(),
-    []
+  React.useEffect(() => {
+    fetchUsers();
+    console.log("hello");
+  },
+  []
   );
 
   return (
@@ -38,9 +37,11 @@ export const App = () => {
           : <>
           <Intro/>
             <NavBar/>
-            <Section>
+            <Section
+            data={data}
+            >
           <ul>
-            {data.results.map((element) => {
+            {data.map((element) => {
               return (<li key={element.email}>{element.email}</li>);
             })}
           </ul>
