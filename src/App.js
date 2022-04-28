@@ -1,46 +1,34 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Intro from "./components/Intro/Intro";
 import NavBar from "./components/NavBar";
 import Section from "./components/Section/Section";
 
-export class App extends React.Component {
-  state = {
-    isLoading: true,
-    hasError: false,
-    data: null
+const URL = "https://randomuser.me/api/?results=8";
+
+export const App = () => {
+  const [isLoading, setIsLoading] = React.useState(true);
+  const [hasError, setHasError] = React.useState(false);
+  const [data, setData] = React.useState(null);
+
+  const fetchData = async () => {
+    try {
+      const result = await fetch(URL);
+      const data = await result.json();
+      setData(data);
+    } catch (error) {
+      setHasError();
+    } finally {
+      setIsLoading(false);
+    }
   };
 
-  // const withAsyncAwait = async () => {
-  //   const response = await fetch("https://randomuser.me/api/");
-  //   const finalRespose = await response.json();
-  //   console.log(finalRespose);
-  async componentDidMount () {
-    try {
-      const result = await fetch("https://randomuser.me/api/?results=8");
-      const data = await result.json();
-      this.setState(() => ({
-        data,
-        isLoading: true
-      }));
-    } catch (error) {
-      this.setState(() => ({
-        hasError: true,
-        isLoading: false
-      }));
-    } finally {
-      this.setState(({ isLoading: false }));
-    }
-  }
+  useEffect(
+    fetchData(),
+    []
+  );
 
-  render () {
-    const {
-      isLoading,
-      hasError,
-      data
-    } = this.state;
-
-    return (
+  return (
     <div>
       {
       hasError
@@ -61,8 +49,7 @@ export class App extends React.Component {
 
       }
     </div>
-    );
-  };
-}
+  );
+};
 
 export default App;
