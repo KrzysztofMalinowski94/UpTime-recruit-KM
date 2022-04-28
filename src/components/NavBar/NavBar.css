@@ -19,13 +19,21 @@
 
 .navBar__buttons{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    
     position: absolute;
     width: 157px;
     height: 42px;
     right: 165px;
     top: calc(50% - 42px/2);
+}
+
+.navBar__links{
+    display: inline-block;
+    position: absolute;
+
+    left: calc(50% - 472px/2);
+    top: calc(50% - 18px/2);
+}
+
+.red{
+    background-color: red;
 }

@@ -1,7 +1,9 @@
 import React from "react";
 
 import Logo from "../Logo/Logo";
-import Button from "../Button";
+import Links from "../Links/Links";
+import ButtonContainer from "../ButtonsContainer/ButtonContainer";
+
 import "./NavBar.css";
 
 export const NavBar = () => {
@@ -12,16 +14,12 @@ export const NavBar = () => {
       <Logo
       className={"logo"}
       ></Logo>
-      <div
-      className="navBar__buttons"
-      >
-        <Button
-        className={"navBar__button--textual"}
-        >Log In</Button>
-        <Button
-        className={"navBar__button--contained"}
-        >Register</Button>
-      </div>
+      <Links
+      className="navBar__links"
+      ></Links>
+      <ButtonContainer
+      className={"navBar__buttons"}
+      />
 
     </nav>
   );
