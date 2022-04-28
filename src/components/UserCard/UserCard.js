@@ -23,8 +23,10 @@ export const UserCard = (props) => {
       <div
       className="userCard__info"
       >
-        {user.name.first}
-        <br></br>
+        <p>{`${user.name.first} ${user.name.last}`}</p>
+        <p>Age: {user.dob.age}</p>
+        <p>Email: {user.email}</p>
+        <p>Tel. {user.cell}</p>
         {children}
       </div>
     </div>

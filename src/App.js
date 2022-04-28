@@ -11,20 +11,19 @@ export const App = () => {
   const [hasError, setHasError] = React.useState(false);
   const [data, setData] = React.useState(null);
 
-  const fetchUsers = React.useCallback(() => {
+  const fetchUsers = () => {
     setIsLoading(true);
     fetch(URL)
       .then((r) => r.json())
       .then((responseData) => setData(responseData.results))
       .catch((error) => setHasError(error))
       .finally(() => setIsLoading(false));
-  }, []);
-
+  };
+  console.log("try1");
   React.useEffect(() => {
     fetchUsers();
     console.log("hello");
-  },
-  []
+  }, []
   );
 
   return (
@@ -36,16 +35,11 @@ export const App = () => {
           ? "LOADING..."
           : <>
           <Intro/>
-            <NavBar/>
-            <Section
-            data={data}
-            >
-          <ul>
-            {data.map((element) => {
-              return (<li key={element.email}>{element.email}</li>);
-            })}
-          </ul>
-            </Section>
+          <NavBar/>
+          <Section
+          data={data}
+          >
+          </Section>
             </>
 
       }

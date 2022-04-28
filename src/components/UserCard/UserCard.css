@@ -19,7 +19,11 @@
     background-size: cover;
     margin: 15px 5px
 }
+.userCard__info
 
 .userCard__info{
-
+    display: none;
+    flex-direction: column;
+    margin: 32px 0px;
+    opacity: 0;
 }

@@ -24,18 +24,17 @@
     height: 296px;
     left: calc(50% - 730px/2);
     top: calc(50% - 296px/2);
-
 }
 
 .intro__buttonWrapper{
     display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-
-position: static;
-width: 396px;
-height: 42px;
-left: calc(50% - 396px/2);
-top: 254px;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    
+    position: static;
+    width: 396px;
+    height: 42px;
+    left: calc(50% - 396px/2);
+    top: 254px;
 }

@@ -20,7 +20,6 @@ export const UsersList = (props) => {
         key={index}
         user= {data[index]}
         >
-          {user.email}
         </UserCard>;
       })}
     </div>
