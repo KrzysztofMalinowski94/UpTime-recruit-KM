@@ -21,7 +21,7 @@ export const Button = (props) => {
     >
       {children}
     </Typography>
-        </button>
+    </button>
   );
 };
 

@@ -24,14 +24,9 @@ export const App = () => {
   });
 
   React.useEffect(() => {
-    console.log(data);
     fetchUsers();
   }, []
   );
-
-  React.useEffect(() => {
-    console.log("HIT");
-  }, [data]);
 
   return (
     <div>
@@ -39,7 +34,7 @@ export const App = () => {
       <Intro/>
       {
       hasError
-        ? "ERROR OCCURED"
+        ? "ERROR OCCURRED"
         : isLoading
           ? <Loader/>
           : <>

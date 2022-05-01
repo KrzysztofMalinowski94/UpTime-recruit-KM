@@ -7,15 +7,25 @@ import Link from "../Link/Link";
 
 export const Links = () => {
   return (
-    <div
+    <ul
     className="links__container"
     >
-      <Link>What do we do?</Link>
-      <Link>Our projects</Link>
-      <Link>Testimonials</Link>
-      <Link>Blog</Link>
-      <Link>Support</Link>
-    </div>
+      <li>
+        <Link>What do we do?</Link>
+      </li>
+      <li>
+        <Link>Our projects</Link>
+      </li>
+      <li>
+        <Link>Testimonials</Link>
+      </li>
+      <li>
+        <Link>Blog</Link>
+      </li>
+      <li>
+        <Link>Support</Link>
+      </li>
+    </ul>
   );
 };
 
