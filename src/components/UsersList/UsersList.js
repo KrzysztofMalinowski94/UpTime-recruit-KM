@@ -8,10 +8,12 @@ import Button from "../Button";
 
 export const UsersList = (props) => {
   const {
-    data
+    data,
+    onclick
   } = props;
 
   return (
+    <>
     <div
     className="usersList__container"
     >
@@ -22,19 +24,21 @@ export const UsersList = (props) => {
         >
         </UserCard>;
       })}
+    </div>
       <Button
-      className="intro__button--outlined"
-      onClick = {() => { console.log("hi"); }}
+      className="section__button intro__button--outlined"
+      onclick = {onclick}
       >
         Load more...
       </Button>
-    </div>
+    </>
   );
 };
 
 UsersList.propTypes = {
   children: PropTypes.node,
-  data: PropTypes.array
+  data: PropTypes.array,
+  onclick: PropTypes.func
 };
 
 export default UsersList;

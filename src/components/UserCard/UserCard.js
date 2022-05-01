@@ -3,6 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import "./UserCard.css";
+import Typography from "../Typography/Typography";
 
 export const UserCard = (props) => {
   const {
@@ -23,10 +24,20 @@ export const UserCard = (props) => {
       <div
       className="userCard__info"
       >
-        <p>{`${user.name.first} ${user.name.last}`}</p>
-        <p>Age: {user.dob.age}</p>
-        <p>Email: {user.email}</p>
-        <p>Tel. {user.cell}</p>
+        <Typography
+        className="h6"
+        >
+          <p>{`${user.name.first} ${user.name.last}`}</p>
+        </Typography>
+        <div>
+          <Typography
+          className="body2"
+          >
+            <p>Age: {user.dob.age}</p>
+            <p>Email: {user.email}</p>
+            <p>Tel. {user.cell}</p>
+          </Typography>
+        </div>
         {children}
       </div>
     </div>

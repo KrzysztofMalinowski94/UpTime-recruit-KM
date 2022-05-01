@@ -2,25 +2,31 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
     flex-basis: 25%;
+    margin-top: 62px;
 
-    justify-items: flex-start;
 }
 
 .userCard__picture{
-    width: 256px;
     height: 260px;
+    width: 256px;
     background-color: rgba(87, 87, 171, 0.086);
-    background-size: cover;
+    background-size: cover; 
 }
 
 .userCard__info{
+    width: 256px;
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
+    align-content: center;
+    justify-content: center;
+}
+
+.userCard__info__header{
+    margin-bottom: 12px;
 }
 
 .userCard__info:hover{
-    background: transparent;
+    background: lightcyan;
+
 }

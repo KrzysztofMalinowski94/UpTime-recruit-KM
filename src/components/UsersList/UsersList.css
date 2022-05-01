@@ -2,16 +2,8 @@
     display: flex;
     flex-basis: 25%;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 165px;
     
-}
-
-.item{
-    flex-basis: 25%;
-    flex-wrap: nowrap;
-    width: 300px;
-    height: 500px;
-    background-color: rgba(87, 87, 171, 0.086);
-
-    margin: 15px 5px
 }

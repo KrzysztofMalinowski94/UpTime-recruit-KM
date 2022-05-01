@@ -3,48 +3,49 @@ import React from "react";
 import Intro from "./components/Intro/Intro";
 import NavBar from "./components/NavBar";
 import Section from "./components/Section/Section";
+import Loader from "./components/Loader";
+
+const fetchNumber = 8;
+const URL = `https://randomuser.me/api?results=${fetchNumber}`;
 
 export const App = () => {
-  const [isLoading, setIsLoading] = React.useState(true);
+  const [isLoading, setIsLoading] = React.useState(false);
   const [hasError, setHasError] = React.useState(false);
-  const [data, setData] = React.useState(null);
-  // const [fetchNumber, setFetchNumber] = React.useState(8);
-  const fetchNumber = 8;
-  const URL = `https://randomuser.me/api/?results=${fetchNumber}`;
+  const [data, setData] = React.useState([]);
 
-  // const loadMoreData = setFetchNumber(fetchNumber + 8);
-
-  const fetchUsers = () => {
+  const fetchUsers = React.useCallback(() => {
     setIsLoading(true);
     fetch(URL)
-      .then((r) => r.json())
-      .then((responseData) => setData(responseData.results))
+      .then((response) => response.json())
+      .then((responseData) => setData((data) => [...data, ...responseData.results]))
       .catch((error) => setHasError(error))
-      .finally(() => setIsLoading(false));
-  };
+      .finally(() => setIsLoading(false)
+      );
+  });
 
   React.useEffect(() => {
+    console.log(data);
     fetchUsers();
   }, []
   );
 
-  // React.useEffect(() => {
-  //   fetchUsers();
-  // }, [fetchNumber]);
+  React.useEffect(() => {
+    console.log("HIT");
+  }, [data]);
 
   return (
     <div>
+      <NavBar/>
+      <Intro/>
       {
       hasError
         ? "ERROR OCCURED"
         : isLoading
-          ? "LOADING..."
+          ? <Loader/>
           : <>
-          <NavBar/>
-          <Intro/>
           <Section
           data={data}
-          // onclick={loadMoreData}
+          onclick={fetchUsers}
           >
           </Section>
             </>
