@@ -16,7 +16,7 @@
     text-align: left;
 }
 
-.h2{
+.title h2{
     font-family: Mulish;
     font-size: 44px;
     font-weight: 700;
@@ -24,7 +24,6 @@
     letter-spacing: 0.20000000298023224px;
     text-align: center;
     color: rgba(55, 63, 65, 1);
-
 }
 
 .h3{

@@ -4,7 +4,7 @@ import Typography from "../Typography/Typography";
 
 import PropTypes from "prop-types";
 
-export const ButtonContainer = (props) => {
+export const ButtonContainer = () => {
   return (
     <div
     className={"navBar__buttons"}

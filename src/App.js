@@ -5,13 +5,13 @@ import NavBar from "./components/NavBar";
 import Section from "./components/Section/Section";
 import Loader from "./components/Loader";
 
-const fetchNumber = 8;
-const URL = `https://randomuser.me/api?results=${fetchNumber}`;
+const URL = "https://randomuser.me/api?results=8";
 
 export const App = () => {
   const [isLoading, setIsLoading] = React.useState(false);
   const [hasError, setHasError] = React.useState(false);
   const [data, setData] = React.useState([]);
+  const [isActive, setActive] = React.useState(false);
 
   const fetchUsers = React.useCallback(() => {
     setIsLoading(true);
@@ -29,24 +29,23 @@ export const App = () => {
   );
 
   return (
-    <div>
-      <NavBar/>
+    <>
+      <NavBar
+      isActive={isActive}
+      setActive={() => setActive(() => !isActive)}
+      />
       <Intro/>
       {
       hasError
         ? "ERROR OCCURRED"
         : isLoading
           ? <Loader/>
-          : <>
-          <Section
+          : <Section
           data={data}
-          onclick={fetchUsers}
-          >
-          </Section>
-            </>
-
+          clickHandler={fetchUsers}
+          />
       }
-    </div>
+    </>
   );
 };
 

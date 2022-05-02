@@ -1,0 +1,17 @@
+.dropMenu{
+    display: none;
+}
+
+@media(max-width:1210px){
+    .dropMenu{
+        cursor: pointer;
+        position: absolute;
+        display: flex;
+        transform: scale(2);
+        transition: 0.3s ease-in-out;
+    }
+    .dropMenu:hover{
+        transform: scale(2.3);
+        transition: 0.3s ease-in-out;
+    }
+}

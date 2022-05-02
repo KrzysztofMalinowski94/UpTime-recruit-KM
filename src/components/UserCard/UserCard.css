@@ -4,7 +4,6 @@
     align-items: center;
     flex-basis: 25%;
     margin-top: 62px;
-
 }
 
 .userCard__picture{
@@ -28,5 +27,4 @@
 
 .userCard__info:hover{
     background: lightcyan;
-
 }

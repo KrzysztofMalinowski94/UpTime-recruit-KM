@@ -9,7 +9,7 @@ import Button from "../Button";
 export const UsersList = (props) => {
   const {
     data,
-    onclick
+    clickHandler
   } = props;
 
   return (
@@ -20,14 +20,14 @@ export const UsersList = (props) => {
       {data.map((user, index) => {
         return <UserCard
         key={index}
-        user= {data[index]}
+        user= {user}
         >
         </UserCard>;
       })}
     </div>
       <Button
       className="section__button intro__button--outlined"
-      onclick = {onclick}
+      clickHandler = {clickHandler}
       >
         Load more...
       </Button>
@@ -38,7 +38,7 @@ export const UsersList = (props) => {
 UsersList.propTypes = {
   children: PropTypes.node,
   data: PropTypes.array,
-  onclick: PropTypes.func
+  clickHandler: PropTypes.func
 };
 
 export default UsersList;

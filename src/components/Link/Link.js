@@ -14,9 +14,9 @@ export const Link = (props) => {
     className={"subtitle"}
     >
       <a
-      href="https://www.youtube.com/watch?v=DLzxrzFCyOs"
+      href="#"
       target={"_blank"}
-      className="link--colors" rel="noreferrer"
+      className="link" rel="noreferrer"
       >{children}</a>
     </Typography>
   );

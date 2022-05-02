@@ -6,7 +6,6 @@ import "./Intro.css";
 
 export const Intro = () => {
   return (
-    <>
       <div
       className="intro"
       >
@@ -20,7 +19,7 @@ export const Intro = () => {
               <Button
               className="intro__button--contained"
               >
-                Button with a label
+              Button with a label
               </Button>
               <Button
               className="intro__button--outlined"
@@ -30,7 +29,6 @@ export const Intro = () => {
             </div>
         </div>
       </div>
-    </>
   );
 };
 

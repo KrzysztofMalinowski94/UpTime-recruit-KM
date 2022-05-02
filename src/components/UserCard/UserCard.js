@@ -7,7 +7,6 @@ import Typography from "../Typography/Typography";
 
 export const UserCard = (props) => {
   const {
-    children,
     user
   } = props;
 
@@ -38,7 +37,6 @@ export const UserCard = (props) => {
             <p>Tel. {user.cell}</p>
           </Typography>
         </div>
-        {children}
       </div>
     </div>
   );

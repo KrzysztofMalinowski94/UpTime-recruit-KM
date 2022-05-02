@@ -22,7 +22,7 @@
     align-items: center;
     padding: 0px;
 
-    width: 730px;
+    max-width: 730px;
     height: 296px;
 
 }
@@ -38,4 +38,11 @@
     height: 42px;
     left: calc(50% - 396px/2);
     top: 254px;
+}
+
+@media(max-width: 425px){
+    .intro__buttonWrapper{
+    flex-direction: column;
+    width: 100%;
+}
 }

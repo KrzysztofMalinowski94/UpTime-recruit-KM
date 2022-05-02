@@ -10,7 +10,7 @@ import "./Section.css";
 export const Section = (props) => {
   const {
     data,
-    onclick
+    clickHandler
   } = props;
 
   return (
@@ -25,7 +25,7 @@ export const Section = (props) => {
       </SectionHeader>
         <UsersList
         data={data}
-        onclick={onclick}
+        clickHandler={clickHandler}
         ></UsersList>
     </section>
   );
@@ -34,7 +34,7 @@ export const Section = (props) => {
 Section.propTypes = {
   children: PropTypes.node,
   data: PropTypes.array,
-  onclick: PropTypes.func
+  clickHandler: PropTypes.func
 };
 
 export default Section;

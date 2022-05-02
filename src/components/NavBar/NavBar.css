@@ -15,6 +15,7 @@
     height: 49px;
     left: 177px;
     top: 20px;
+    z-index: 2;
 }
 
 .navBar__buttons{
@@ -23,11 +24,24 @@
     width: 157px;
     height: 42px;
     right: 165px;
-    top: calc(50% - 42px/2);
 }
 
-@media(max-width: 768px){
-    .navBar__buttons{
-        display: none;
+
+
+@media(max-width: 1210px){
+    .navBar{
+        justify-content: space-evenly;
     }
+    .logo{
+        position: static;
+    }
+    .navBar__buttons{
+        position: absolute;
+        top: 0px;
+        right: 5px;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+
 }
