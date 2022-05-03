@@ -13,7 +13,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .intro__content{
@@ -24,7 +23,6 @@
 
     max-width: 730px;
     height: 296px;
-
 }
 
 .intro__buttonWrapper{

@@ -9,11 +9,11 @@ export const Typography = (props) => {
     children
   } = props;
   return (
-        <span
-        className={className}
-        >
-          {children}
-        </span>
+    <span
+    className={className}
+    >
+      {children}
+    </span>
   );
 };
 

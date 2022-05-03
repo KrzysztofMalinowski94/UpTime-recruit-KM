@@ -22,7 +22,7 @@ export const Intro = () => {
               Button with a label
               </Button>
               <Button
-              className="intro__button--outlined"
+              className="intro__button-outlined"
               >
               This button looks empty
               </Button>

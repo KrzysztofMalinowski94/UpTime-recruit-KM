@@ -15,7 +15,7 @@ This API allows to generate data of random users with lot of data inside like na
 
 ## Problems & solutions
 
-During coding there were some troubles regarding fetching data which later came out to be connected with release of React 18 as new feature was at some point faulty and caused multiple fetching. It was resolved by removing <React.Strict/> component from index.js in src folder.
+During coding there were some troubles regarding fetching data which later came out to be connected with release of React 18 as new feature was at some point faulty and caused multiple fetching. It was resolved by removing <React.StrictMode/> component from index.js in src folder.
 
 Fetching data from API was connected with problem that every time when request for more data was called, previous data was replaced with new random one. This was resolved by destructuring array of data each time when fetch is called and merging it with new set of data.
 

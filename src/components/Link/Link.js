@@ -9,9 +9,10 @@ export const Link = (props) => {
   const {
     children
   } = props;
+
   return (
     <Typography
-    className={"subtitle"}
+    className={"linkStyle"}
     >
       <a
       href="#"

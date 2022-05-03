@@ -18,9 +18,9 @@ export const Loader = () => {
       className="loader__text"
       >
         <Typography
-        className="h3"
+        className="sectionTitle"
         >
-      Loading...
+        <h3>Loading...</h3>
         </Typography>
       </div>
     </div>

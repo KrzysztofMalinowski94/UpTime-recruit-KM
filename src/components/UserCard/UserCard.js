@@ -24,13 +24,13 @@ export const UserCard = (props) => {
       className="userCard__info"
       >
         <Typography
-        className="h6"
+        className="userName"
         >
-          <p>{`${user.name.first} ${user.name.last}`}</p>
+          <h6>{`${user.name.first} ${user.name.last}`}</h6>
         </Typography>
         <div>
           <Typography
-          className="body2"
+          className="content2"
           >
             <p>Age: {user.dob.age}</p>
             <p>Email: {user.email}</p>

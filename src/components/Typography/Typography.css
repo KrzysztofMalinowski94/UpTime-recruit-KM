@@ -1,4 +1,4 @@
-.button{
+.buttonStyle{
     font-family: Mulish;
     font-size: 14px;
     font-weight: 700;
@@ -7,7 +7,7 @@
     text-align: center;
 }
 
-.subtitle{
+.linkStyle{
     font-family: Mulish;
     font-size: 14px;
     font-weight: 600;
@@ -26,16 +26,16 @@
     color: rgba(55, 63, 65, 1);
 }
 
-.h3{
+.sectionTitle h3{
     font-family: Mulish;
     font-size: 32px;
     font-weight: 700;
     line-height: 40px;
     letter-spacing: 0.10000000149011612px;
     text-align: center;
-    }
+}
 
-.h6{
+.userName h6{
     font-family: Mulish;
     font-size: 18px;
     font-weight: 700;
@@ -44,7 +44,7 @@
     text-align: center;
 }
 
-.body1{
+.content1{
     font-family: Mulish;
     font-size: 16px;
     font-weight: 400;
@@ -52,10 +52,9 @@
     letter-spacing: 0.30000001192092896px;
     text-align: center;
     color: rgba(115, 123, 125, 1);
-
 }
 
-.body2{
+.content2{
     font-family: Mulish;
     font-size: 14px;
     font-weight: 400;

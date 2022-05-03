@@ -16,12 +16,12 @@ export const SectionHeader = (props) => {
     className="sectionHeader__container"
     >
      <Typography
-     className="h3"
+     className="sectionTitle"
      >
-            <p>{header}</p>
+            <h3>{header}</h3>
      </Typography>
      <Typography
-     className="body1"
+     className="content1"
      >
        <p>{children}</p>
      </Typography>

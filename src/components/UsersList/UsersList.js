@@ -26,7 +26,7 @@ export const UsersList = (props) => {
       })}
     </div>
       <Button
-      className="section__button intro__button--outlined"
+      className="section__button intro__button-outlined"
       clickHandler = {clickHandler}
       >
         Load more...

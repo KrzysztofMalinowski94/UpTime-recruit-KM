@@ -16,11 +16,11 @@ export const Button = (props) => {
     className={className}
     onClick={clickHandler}
     >
-    <Typography
-    className="button"
-    >
-      {children}
-    </Typography>
+      <Typography
+      className="buttonStyle"
+      >
+        {children}
+      </Typography>
     </button>
   );
 };
