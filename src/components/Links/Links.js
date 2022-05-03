@@ -15,30 +15,32 @@ export const Links = (props) => {
   } = props;
 
   return (
-    <ul
-    className="links"
-    >
-       <li
-       className="links__dropdown"
-       onClick={setActive(!isActive)}>
-         <FontAwesomeIcon icon={faBars}/>
-       </li>
-      <li className={`links__link ${isActive ? "links__link--active" : ""}`}>
-        <Link>What do we do?</Link>
-      </li>
-      <li className={`links__link ${isActive ? "links__link--active" : ""}`}>
-        <Link>Our projects</Link>
-      </li>
-      <li className={`links__link ${isActive ? "links__link--active" : ""}`}>
-        <Link>Testimonials</Link>
-      </li>
-      <li className={`links__link ${isActive ? "links__link--active" : ""}`}>
-        <Link>Blog</Link>
-      </li>
-      <li className={`links__link ${isActive ? "links__link--active" : ""}`}>
-        <Link>Support</Link>
-      </li>
-    </ul>
+    <>
+      <div
+      className="links__dropdown"
+      onClick={setActive(!isActive)}>
+        <FontAwesomeIcon icon={faBars}/>
+      </div>
+      <ul
+      className="links"
+      >
+        <li className={`links__link ${isActive ? "links__link--active" : ""}`}>
+          <Link>What do we do?</Link>
+        </li>
+        <li className={`links__link ${isActive ? "links__link--active" : ""}`}>
+          <Link>Our projects</Link>
+        </li>
+        <li className={`links__link ${isActive ? "links__link--active" : ""}`}>
+          <Link>Testimonials</Link>
+        </li>
+        <li className={`links__link ${isActive ? "links__link--active" : ""}`}>
+          <Link>Blog</Link>
+        </li>
+        <li className={`links__link ${isActive ? "links__link--active" : ""}`}>
+          <Link>Support</Link>
+        </li>
+      </ul>
+    </>
   );
 };
 

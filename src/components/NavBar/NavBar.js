@@ -13,7 +13,7 @@ export const NavBar = (props) => {
     isActive,
     setActive
   } = props;
-  console.log(isActive, typeof (isActive));
+
   return (
     <nav
     className="navBar"

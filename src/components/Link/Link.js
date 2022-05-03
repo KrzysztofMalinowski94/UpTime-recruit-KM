@@ -17,7 +17,7 @@ export const Link = (props) => {
       <a
       href="#"
       target={"_blank"}
-      className="link" rel="noreferrer"
+      className="link"
       >{children}</a>
     </Typography>
   );

@@ -12,34 +12,31 @@
 }
 
 @media(max-width:1210px){
-    .links{
-        position: absolute;
-        top: calc(50% - 32px);
-        left: 10vw;
-        width: fit-content;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        padding: 0;  
-        background-color: rgba(255, 255, 255, 0.544);  
-    }
-
+    
     .links__dropdown{
         display: inline-block;
+        position: absolute;
+        top: calc(50%-32px);
+        left: 50px;
         cursor: pointer;
         transform: scale(2);
     }
     
-    .links__link.links__link--active{
-        display: flex;
-        align-items: center;
-        width: 130px;
-        height: 30px;
-        margin-top: 12px;
-    }
-
     .links__link{
         display: none;
+    }
+
+    .links{
+        position: absolute;
+        top: 88px;
+        width:100%;
+        display: block;
+        padding: 0;
+        margin: 0;  
+        background-color: rgb(255, 255, 255);  
+    }
+    
+    .links__link.links__link--active{
+        display: block;
     }
 }

@@ -6,3 +6,15 @@
 .link:visited{
     color: rgba(55, 63, 65, 1);
 }
+
+@media(max-width:1210px){
+    .link{
+    padding: 14px 50px;
+    display: block;   
+    font-size: 1.5em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.214);
+    }
+    .link:hover{
+        background-color: rgba(255, 255, 255, 0.801);
+    }
+}

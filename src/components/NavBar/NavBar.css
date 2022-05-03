@@ -43,5 +43,9 @@
         display: flex;
         flex-direction: column;
     }
+    .navBar__links{
+        position: absolute;
+        left: 0px;
+    }
 
 }
